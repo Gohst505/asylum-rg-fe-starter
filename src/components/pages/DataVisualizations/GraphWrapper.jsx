@@ -84,6 +84,7 @@ function GraphWrapper(props) {
         })
         .then(result => {
           stateSettingCallback(view, office, test_data); // <-- `test_data` here can be simply replaced by `result.data` in prod!
+          return result.data;
         })
         .catch(err => {
           console.error(err);
@@ -100,6 +101,7 @@ function GraphWrapper(props) {
         })
         .then(result => {
           stateSettingCallback(view, office, test_data); // <-- `test_data` here can be simply replaced by `result.data` in prod!
+          return result.data;
         })
         .catch(err => {
           console.error(err);
