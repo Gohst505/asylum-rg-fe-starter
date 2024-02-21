@@ -1,7 +1,8 @@
 const { spawn } = require("child_process");
 const { Buffer } = require("buffer");
  
-const ls = spawn(/^win/.test(process.platform) ? 'npx.cmd' : 'npx', ['craco', '--max_old_space_size=4096', 'start']);
+//openssl for node v14 above 
+const ls = spawn(/^win/.test(process.platform) ? 'npx.cmd' : 'npx', ['craco', '--openssl-legacy-provider', '--max_old_space_size=4096', 'start']);
 
 ls.stdout.on("data", data => {
     console.log(`${data}`);

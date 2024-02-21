@@ -13,6 +13,7 @@
     ]
   },
   "dependencies": {
+    "16": "^0.0.2",
     "@ant-design/icons": "^4.7.0",
     "@ant-design/pro-form": "^1.52.13",
     "@ant-design/pro-table": "^2.62.7",
@@ -25,6 +26,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.26.1",
     "file-saver": "^2.0.5",
+    "nvm": "^0.0.4",
     "plotly.js": "^1.54.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
